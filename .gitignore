@@ -1,5 +1,15 @@
 # Environment and local configuration
 config/config.php
+.env
+.env.*
+!.env.example
+
+# Local IDE and OS files
+.vscode/
+.idea/
+*.sublime-*
+Thumbs.db
+.DS_Store
 
 # Uploaded files and runtime storage
 storage/bab/*
@@ -7,9 +17,9 @@ storage/naskah/*
 storage/proposal/*
 storage/surat/*
 
-# PHP / editor / OS files
+# PHP and temporary files
 *.log
-.vscode/
-.git/
-Thumbs.db
-.DS_Store
+*.tmp
+*.bak
+*.cache
+php_errors.log
